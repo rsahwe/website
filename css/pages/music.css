@@ -1,0 +1,3 @@
+:root:has(#music:target) .music {
+    display: block !important;
+}

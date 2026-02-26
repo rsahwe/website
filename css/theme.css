@@ -1,0 +1,31 @@
+:root:has(#normal:checked) {
+    --theme-base: var(--normal-theme-base);
+    --theme-second: var(--normal-theme-second);
+    --theme-third: var(--normal-theme-third);
+    --theme-text: var(--normal-theme-text);
+    --theme-accent: var(--normal-theme-accent);
+}
+
+:root {
+    --normal-theme-base: #01011b;
+    --normal-theme-second: #1d233f;
+    --normal-theme-third: #0f1020;
+    --normal-theme-text: #d4ffff;
+    --normal-theme-accent: #ff8cff;
+}
+
+:root:has(#evcolors:checked) {
+    --theme-base: var(--evcolors-theme-base);
+    --theme-second: var(--evcolors-theme-second);
+    --theme-third: var(--evcolors-theme-third);
+    --theme-text: var(--evcolors-theme-text);
+    --theme-accent: var(--evcolors-theme-accent);
+}
+
+:root {
+    --evcolors-theme-base: #041f07;
+    --evcolors-theme-second: #19371b;
+    --evcolors-theme-third: #0e2a10;
+    --evcolors-theme-text: #b2ffae;
+    --evcolors-theme-accent: #84ffce;
+}

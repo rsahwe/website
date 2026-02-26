@@ -1,0 +1,13 @@
+.page {
+    display: none;
+    position: absolute;
+    width: var(--page-width);
+    height: var(--page-height);
+    padding: 0 calc(calc(var(--page-width) - var(--content-width)) / 2);
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--theme-text);
+    overflow-y: scroll;
+}

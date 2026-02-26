@@ -1,0 +1,15 @@
+body:has(#keys:target) .keys {
+    display: block !important;
+}
+
+.keys {
+    pre {
+        background-color: var(--theme-third);
+        width: fit-content;
+        padding: calc(3 * var(--gap));
+        margin: auto;
+        border-radius: calc(3 * var(--gap));
+        border-color: var(--theme-second);
+        border-style: dashed;
+    }
+}

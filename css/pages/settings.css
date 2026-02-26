@@ -1,0 +1,23 @@
+body:has(#settings:target) .settings {
+    display: block !important;
+}
+
+.settings {
+    .card-gallery {
+        :nth-child(1 of label) {
+            --theme-base: var(--normal-theme-base) !important;
+            --theme-second: var(--normal-theme-second) !important;
+            --theme-third: var(--normal-theme-third) !important;
+            --theme-text: var(--normal-theme-text) !important;
+            --theme-accent: var(--normal-theme-accent) !important;
+        }
+
+        :nth-child(2 of label) {
+            --theme-base: var(--evcolors-theme-base) !important;
+            --theme-second: var(--evcolors-theme-second) !important;
+            --theme-third: var(--evcolors-theme-third) !important;
+            --theme-text: var(--evcolors-theme-text) !important;
+            --theme-accent: var(--evcolors-theme-accent) !important;
+        }
+    }
+}

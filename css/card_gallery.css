@@ -1,0 +1,40 @@
+.card-gallery {
+    margin-top: calc(2 * var(--gap));
+    column-width: 300px;
+    column-gap: var(--gap);
+}
+
+.card {
+    position: relative;
+    background-color: var(--theme-second);
+    padding: calc(2 * var(--gap));
+    margin-bottom: var(--gap);
+    border-radius: calc(2 * var(--gap));
+    border-color: var(--theme-third);
+    border-style: dashed;
+}
+
+.card-left {
+    border-top-left-radius: calc(2 * var(--gap));
+    border-bottom-left-radius: calc(2 * var(--gap));
+    background-color: var(--theme-accent);
+    position: absolute;
+    height: 100%;
+    width: calc(5 * var(--gap));
+    left: 0;
+    top: 0;
+}
+
+.card-content {
+    margin-left: calc(5 * var(--gap));
+}
+
+.card-button {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--theme-accent);
+    transition: box-shadow 0.2s ease-out 0s;
+
+    &:hover {
+        box-shadow: inset 0 0 calc(2 * var(--gap)) 0 var(--theme-accent);
+    }
+}

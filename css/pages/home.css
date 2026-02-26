@@ -1,0 +1,7 @@
+body:has(#home:target) .home {
+    display: block !important;
+}
+
+body:not(:has(*:target)) .home {
+    display: block !important;
+}

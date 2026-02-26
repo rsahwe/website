@@ -1,0 +1,61 @@
+#!INCLUDE(card_gallery.css)
+
+#themes {
+    display: none;
+}
+
+:root {
+    --page-width: calc(100dvw - var(--navbar-width, 0px));
+    --page-height: calc(100dvh - var(--navbar-height, 0px));
+    --gap: 5px;
+    --content-width: min(680px, calc(100dvw - calc(calc(var(--gap) * 5) + var(--navbar-width, 0))));
+}
+
+.center {
+    text-align: center;
+}
+
+.divider {
+    background-color: var(--theme-text);
+    margin: var(--gap) 0;
+    flex-shrink: 0;
+    width: calc(100% - var(--gap));
+    height: 1px;
+}
+
+body {
+    position: absolute;
+    width: 100lvw;
+    height: 100lvh;
+    margin: 0px;
+
+    background-color: var(--theme-base);
+    color: var(--theme-text);
+    font-family: "JetBrainsMono";
+}
+
+#!INCLUDE(navbar.css)
+
+#!INCLUDE(pages/main.css)
+#!INCLUDE(pages/home.css)
+#!INCLUDE(pages/music.css)
+#!INCLUDE(pages/keys.css)
+#!INCLUDE(pages/settings.css)
+
+#!INCLUDE(theme.css)
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Material Symbols";
+    font-style: normal;
+    src: url("data:font/woff2;base64,#!INCLUDE_BASE64(../fonts/materialsymbols/material-symbols.woff2)") format("woff2");
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    font-style: normal;
+    src: url("data:font/woff2;base64,#!INCLUDE_BASE64(../fonts/jetbrainsmono/JetBrainsMono-Regular.woff2)") format("woff2");
+}

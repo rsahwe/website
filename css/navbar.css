@@ -1,0 +1,79 @@
+#navbar {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: var(--navbar-width, 100%);
+    height: var(--navbar-height, 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: var(--navbar-dir);
+    background-color: var(--theme-third);
+
+    .navbar-island {
+        border-radius: calc(3 * var(--gap));
+        padding: calc(2 * var(--gap));
+        margin: var(--gap);
+        display: flex;
+        align-items: center;
+        flex-direction: var(--navbar-dir);
+        background-color: var(--theme-second);
+
+        .navbar-item {
+            width: 48px;
+            height: 48px;
+            text-decoration-line: none;
+            outline: none;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .navbar-label {
+                font-size: 12px;
+                margin: 0px;
+                margin-top: 2px;
+                text-align: center;
+                color: var(--theme-text);
+            }
+
+            .navbar-icon {
+                font-family: "Material Symbols";
+                font-size: 24px;
+                height: 28px;
+                position: relative;
+                padding: 2px 12px;
+                color: var(--theme-accent);
+            }
+        }
+    }
+}
+
+@media (width < 500px) {
+    :root {
+        --navbar-height: calc(65px + calc(2 * var(--gap)));
+        --navbar-dir: row;
+    }
+
+    #navbar {
+        margin-top: calc(100dvh - var(--navbar-height))
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+@media (width >= 500px) {
+    :root {
+        --navbar-width: calc(65px + calc(2 * var(--gap)));
+        --navbar-dir: column;
+    }
+
+    #navbar {
+        margin-left: var(--gap);
+        margin-right: var(--gap);
+    }
+
+    .mobile-only {
+        display: none !important;
+    }
+}

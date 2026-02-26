@@ -1,0 +1,45 @@
+<div id="themes">
+    <input name="theme" id="normal" type="radio" checked="true">
+    <input name="theme" id="evcolors" type="radio">
+</div>
+
+<div id="navbar">
+    <div style="margin: auto"></div>
+
+    <div class="navbar-island">
+        <a id="home" href="#home" class="navbar-item">
+            <span class="navbar-icon">home</span>
+            <p class="navbar-label">Home</p>
+        </a>
+        <div class="page home">#!INCLUDE(home.html)</div>
+
+        <a id="music" href="#music" class="navbar-item">
+            <span class="navbar-icon">music_note_2</span>
+            <p class="navbar-label">Music</p>
+        </a>
+        <div class="page music">#!INCLUDE(music.html)</div>
+
+        <a id="keys" href="#keys" class="navbar-item">
+            <span class="navbar-icon">key</span>
+            <p class="navbar-label">Keys</p>
+        </a>
+        <div class="page keys">#!INCLUDE(keys.html)</div>
+
+        <div class="divider desktop-only"></div>
+
+        <a id="github" href="https://github.com/rsahwe" class="navbar-item desktop-only">
+            <span class="navbar-icon">commit</span>
+            <p class="navbar-label">Github</p>
+        </a>
+    </div>
+
+    <div style="margin: auto"></div>
+
+    <div class="navbar-island">
+        <a id="settings" href="#settings" class="navbar-item">
+            <span class="navbar-icon">settings</span>
+            <p class="navbar-label">Settings</p>
+        </a>
+        <div class="page settings">#!INCLUDE(settings.html)</div>
+    </div>
+</div>

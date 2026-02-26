@@ -1,0 +1,3 @@
+[submodule "webby"]
+	path = bin/webby
+	url = https://github.com/bright-shard/webby
