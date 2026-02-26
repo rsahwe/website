@@ -22,6 +22,8 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Install rust
         uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          rustflags: ""
       - name: Install nix dependencies
         run: nix-env -f "<nixpkgs>" -iA faircamp furnace
       - name: Install webby
