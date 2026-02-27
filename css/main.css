@@ -34,6 +34,10 @@ body {
     font-family: "JetBrainsMono";
 }
 
+a {
+    color: var(--theme-accent);
+}
+
 #!INCLUDE(navbar.css)
 
 #!INCLUDE(pages/main.css)

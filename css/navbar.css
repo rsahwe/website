@@ -43,6 +43,18 @@
                 padding: 2px 12px;
                 color: var(--theme-accent);
             }
+
+            &:hover {
+                cursor: pointer;
+
+                .navbar-icon {
+                    font-weight: 600;
+
+                    &::before {
+                        opacity: 20%;
+                    }
+                }
+            }
         }
     }
 }
